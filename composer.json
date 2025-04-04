@@ -1,0 +1,31 @@
+{
+    "name": "myfav/designs-product-detail",
+    "version": "0.0.1",
+    "description": "Design-Modifications for the product detail page.",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Krämer, Mindfav Software",
+            "homepage": "https://www.mindfav.com"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.5",
+        "shopware/administration": "~6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Myfav\\DesignsProductDetail\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Myfav\\DesignsProductDetail\\MyfavDesignsProductDetail",
+        "plugin-icon": "plugin.png",
+        "copyright": "(c) by Mindfav",
+        "label": {
+            "de-DE": "Designs: Artikel-Detail",
+            "en-GB": "Designs: Product-Detail"
+        }
+    }
+}

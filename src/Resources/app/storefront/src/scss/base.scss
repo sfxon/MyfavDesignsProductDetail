@@ -1,0 +1,43 @@
+$sass-use-mobile-accordeon-for-tabs: false !default;
+
+@if $sass-use-mobile-accordeon-for-tabs {
+    @include media-breakpoint-down(md) {
+        .product-description-reviews-tab-navigation {
+            display: none;
+        }
+
+        .product-detail-tabs-content {
+            display: block!important;
+
+            .tab-pane {
+                display: block!important;
+            }
+
+            button.offcanvas-close {
+                display: none!important;
+            }
+
+            h3.product-detail-description-title {
+                background-color: #EEE;
+                display: flex;
+                font-size: 1rem;
+                justify-content: space-between;
+                padding: 6px 12px;
+
+                .myfav-designs-product-detail-akkordeon-title {
+                    padding-right: 12px;
+                }
+
+                .myfav-designs-product-detail-akkordeon-arrow {
+                    svg {
+                        height: 1rem;
+                    }
+                }
+            }
+
+            .product-detail-description-text {
+                display: none;
+            }
+        }
+    }
+}

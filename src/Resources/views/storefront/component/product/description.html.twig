@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/component/product/description.html.twig' %}
+
+{% block component_product_description_title %}
+    {% set MyfavDesignsProductDetailConfig = config('MyfavDesignsProductDetail.config') %}
+
+    {% if MyfavDesignsProductDetailConfig.sassUseMobileAccordeonForTabs === "true" %}
+        <div class="h3 product-detail-description-title">
+            <div class="myfav-designs-product-detail-akkordeon-title">{{ "detail.descriptionTitle"|trans|sw_sanitize }} "{{ page.product.translated.name }}"</div>
+            <div class="myfav-designs-product-detail-akkordeon-arrow">
+                <span class="arrow-up">{% sw_icon 'arrow-head-up' %}</span>
+                <span class="arrow-down" style="display: none;">{% sw_icon 'arrow-head-down' %}</span>
+            </div>
+        </div>
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Article-Detail Settings</title>
+        <title lang="de-DE">Artikel-Detail Einstellungen</title>
+
+        <input-field type="single-select">
+            <name>sassUseMobileAccordeonForTabs</name>
+            <options>
+                <option>
+                    <id>false</id>
+                    <name>Disabled</name>
+                    <name lang="de-DE">Deaktiviert</name>
+                </option>
+                <option>
+                    <id>true</id>
+                    <name>Enabled</name>
+                    <name lang="de-DE">Aktiviert</name>
+                </option>
+            </options>
+            <defaultValue>false</defaultValue>
+            <label>Mobile: Replace Tab-Popovers by Accordeon</label>
+            <label lang="de-DE">Mobil: Ersetze die Tab-Popups durch ein Akkordeon</label>
+            <helpText>Shows an accordeon instead of popovers on the mobile article detail page.</helpText>
+            <helpText lang="de-DE">Zeigt auf kleinen Bildschirmen ein Akkordeon anstelle des Popups für die mobile Artikel-Beschreibung.</helpText>
+            <css>sass-use-mobile-accordeon-for-tabs</css>
+        </input-field>
+    </card>
+</config>
