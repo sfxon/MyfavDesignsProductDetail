@@ -1,6 +1,10 @@
 $sass-use-mobile-accordeon-for-tabs: false !default;
 
 @if $sass-use-mobile-accordeon-for-tabs {
+    .myfav-designs-product-detail-akkordeon-arrow {
+        display: none;
+    }
+
     @include media-breakpoint-down(md) {
         .product-description-reviews-tab-navigation {
             display: none;
@@ -11,6 +15,7 @@ $sass-use-mobile-accordeon-for-tabs: false !default;
 
             .tab-pane {
                 display: block!important;
+                opacity: 1!important;
             }
 
             button.offcanvas-close {
@@ -19,6 +24,7 @@ $sass-use-mobile-accordeon-for-tabs: false !default;
 
             h3.product-detail-description-title {
                 background-color: #EEE;
+                cursor: pointer;
                 display: flex;
                 font-size: 1rem;
                 justify-content: space-between;
@@ -37,6 +43,24 @@ $sass-use-mobile-accordeon-for-tabs: false !default;
 
             .product-detail-description-text {
                 display: none;
+            }
+
+            /* This openes the tab content or closes it. */
+            .myfav-detail-akkordeon-opened>div:last-child {
+                display: block!important;
+            }
+
+            .myfav-detail-akkordeon-opened .myfav-designs-product-detail-akkordeon-arrow {
+                .arrow-up {
+                    display: none!important;
+                }
+                .arrow-down {
+                    display: block!important;
+                }
+            }
+
+            .myfav-designs-product-detail-akkordeon-arrow {
+                display: block;
             }
         }
     }

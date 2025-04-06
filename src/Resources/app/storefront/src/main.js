@@ -2,4 +2,4 @@ import ProductDetailAccordeonPlugin from './product-detail-accordeon-plugin/prod
 
 // Register your plugin via the existing PluginManager
 const PluginManager = window.PluginManager;
-PluginManager.register('ProductDetailAccordeonPlugin', ProductDetailAccordeonPlugin);
+PluginManager.register('ProductDetailAccordeonPlugin', ProductDetailAccordeonPlugin, '#product-detail-tabs');

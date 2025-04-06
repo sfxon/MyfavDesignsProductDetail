@@ -1,10 +1,8 @@
 # Shopware 6 - Customizations for the product-detail page
 
-Projekt-Status: **In development**
+Project-Status: **Early Access**
 
-This project is still in development. Some features are working, while others are not finished or have to be added.
-
----
+This project is still in development. Key features are finished. New features and more information is coming step by step.
 
 ## Description
 
@@ -12,12 +10,9 @@ This plugin provides various customizations for the product detail page of your 
 
 All features can be enabled/disabled via the settings.
 
-Current adjustments:
+**Current features:**
 
 * Display an accordion on mobile devices or small screens instead of popovers for the individual sections.
-
-
-
 
 ## Disclaimer
 
